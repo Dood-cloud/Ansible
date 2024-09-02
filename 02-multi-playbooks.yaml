@@ -1,6 +1,19 @@
+
+#PLAY01
+
 - name: PLAY01
   hosts: web
   tasks: # to print the output to console
-  - name: Ravindra changing this message to check
+  - name: PLAY01 TASK01
     ansible.builtin.debug:
       msg: "This is from PLAY01 AND TASK01"
+
+
+#PLAY02
+
+- name: PLAY02
+  hosts: web
+  tasks: # to print the output to console
+  - name: PLAY02 TASK02
+    ansible.builtin.debug:
+      msg: "This is from PLAY02 AND TASK02"
