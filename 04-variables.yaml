@@ -1,0 +1,6 @@
+- name: variables to input
+  hosts: web
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "This course is all about making Ravindra a Devops Engineer in 120 days"
