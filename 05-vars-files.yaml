@@ -3,7 +3,7 @@
   vars.files:
   - vars.yaml
   tasks: print the information from variables in files
-    name: print the course information
+  - name: print the course information
     ansible.builtin.debug:
       msg: "This course is all about making {{NAME}} a {{ROLE}} in {{TIME}}"
 
