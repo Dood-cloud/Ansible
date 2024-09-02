@@ -3,4 +3,4 @@
   tasks: # to print the output to console
   - name: PLAY01 TASK01
     ansible.builtin.debug:
-    
+      msg: "This is from PLAY01 AND TASK01"
