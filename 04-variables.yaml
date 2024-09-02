@@ -1,6 +1,11 @@
 - name: variables to input
   hosts: web
+  vars:
+    NAME: "Ravindra"
+    ROLE: "Devops Engineer"
+    TIME: "120 DAYS"
+
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "This course is all about making Ravindra a Devops Engineer in 120 days"
+      msg: "This course is all about making {{NAME}} a {{ROLE}} in {{TIME}}"
