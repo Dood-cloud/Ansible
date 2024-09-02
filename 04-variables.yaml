@@ -9,3 +9,17 @@
   - name: print the information
     ansible.builtin.debug:
       msg: "This course is all about making {{NAME}} a {{ROLE}} in {{TIME}}"
+
+  tasks:
+  - name: print the information task2
+    vars:
+      NAME: "Sudha"
+      ROLE: "Ansible Specialist"
+      TIME: "110 Days"
+    ansible.builtin.debug:
+      msg: "This course is all about making {{NAME}} a {{ROLE}} in {{TIME}}"
+
+  tasks:
+  - name: print the information from task3
+    ansible.builtin.debug:
+      msg: "This course is all about making {{NAME}} a fully paid Devops engineer in United States of America "
